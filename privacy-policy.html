@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PDFirma Privacy Policy</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+            --bg: #f5f5f7;
+            --card: rgba(255, 255, 255, 0.88);
+            --text: #111111;
+            --muted: #5c5c63;
+            --accent: #0a84ff;
+            --border: rgba(17, 17, 17, 0.08);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #111217;
+                --card: rgba(28, 29, 34, 0.88);
+                --text: #f3f4f6;
+                --muted: #b4b7c0;
+                --accent: #4aa3ff;
+                --border: rgba(255, 255, 255, 0.10);
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background:
+                radial-gradient(circle at top left, rgba(10, 132, 255, 0.10), transparent 28%),
+                radial-gradient(circle at bottom right, rgba(52, 199, 89, 0.08), transparent 24%),
+                var(--bg);
+            color: var(--text);
+            line-height: 1.65;
+        }
+
+        main {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 48px 20px 80px;
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 28px;
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        h1, h2 {
+            line-height: 1.2;
+            margin: 0 0 14px;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            letter-spacing: -0.03em;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin-top: 28px;
+        }
+
+        p, li {
+            color: var(--muted);
+            font-size: 1rem;
+        }
+
+        ul {
+            padding-left: 1.2rem;
+            margin: 10px 0 0;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+
+        .meta {
+            margin-top: 12px;
+            font-size: 0.92rem;
+            color: var(--muted);
+        }
+
+        a {
+            color: var(--accent);
+        }
+
+        .note {
+            margin-top: 18px;
+            padding: 14px 16px;
+            border-radius: 16px;
+            background: rgba(10, 132, 255, 0.08);
+            border: 1px solid rgba(10, 132, 255, 0.14);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="card">
+            <span class="eyebrow">PDFirma</span>
+            <h1>Privacy Policy</h1>
+            <p>
+                This Privacy Policy explains how PDFirma handles information when you use the PDFirma macOS
+                application.
+            </p>
+            <p class="meta">
+                Effective date: March 13, 2026<br>
+                Owner: Mario Alfonso Medina Macias
+            </p>
+
+            <h2>Overview</h2>
+            <p>
+                PDFirma is designed to prepare, sign, and validate PDF documents on macOS using certificates
+                available on the user's device. PDFirma is intended to work primarily on-device.
+            </p>
+
+            <h2>Information We Collect</h2>
+            <p>
+                PDFirma does not create user accounts and does not intentionally collect personal data for
+                storage on our own servers.
+            </p>
+            <ul>
+                <li>Documents selected by the user are processed locally on the device.</li>
+                <li>Certificate identities are accessed through Apple system frameworks and Keychain services.</li>
+                <li>PDFirma does not include advertising, analytics SDKs, or user tracking technologies.</li>
+            </ul>
+
+            <h2>How Documents and Certificates Are Used</h2>
+            <p>
+                When you use PDFirma, selected PDF documents and digital certificate identities may be accessed
+                locally to prepare and apply digital signatures, verify signatures, and display signing or
+                validation information.
+            </p>
+            <ul>
+                <li>PDF files are opened, processed, and saved at locations chosen by the user.</li>
+                <li>Digital certificates and private keys are accessed through macOS security services.</li>
+                <li>Private keys are intended to remain under the control of the operating system and its secure storage.</li>
+            </ul>
+
+            <h2>Network Requests</h2>
+            <p>
+                Depending on the certificate and signing workflow, PDFirma may connect to third-party trust
+                infrastructure services such as:
+            </p>
+            <ul>
+                <li>Timestamp Authority (TSA) services</li>
+                <li>Online Certificate Status Protocol (OCSP) responders</li>
+                <li>Certificate Revocation List (CRL) distribution points</li>
+            </ul>
+            <p>
+                These requests are made to support digital signature validation and long-term validation
+                workflows. The availability and behavior of these services depend on certificate issuers and
+                external providers.
+            </p>
+
+            <h2>Data Sharing</h2>
+            <p>
+                PDFirma does not sell personal information and does not share user data with data brokers.
+                However, technical signing or validation requests may be sent to third-party certificate or
+                timestamp infrastructure when required by the signing process.
+            </p>
+
+            <h2>Data Retention</h2>
+            <p>
+                PDFirma does not maintain a central user database. Documents and signed outputs remain on the
+                user's device or in locations explicitly chosen by the user. Any retention of files is controlled
+                by the user.
+            </p>
+
+            <h2>Security</h2>
+            <p>
+                PDFirma is built to rely on native macOS security mechanisms, including sandboxing and Apple
+                security frameworks, where applicable. No method of transmission or storage is completely secure,
+                but reasonable efforts are made to reduce risk within the app's design.
+            </p>
+
+            <h2>Children's Privacy</h2>
+            <p>
+                PDFirma is not directed to children and does not knowingly collect personal information from
+                children.
+            </p>
+
+            <h2>Your Choices</h2>
+            <p>
+                You control which documents you open, where you save output files, which certificates you use,
+                and whether you proceed with signing operations. You may stop using the app at any time.
+            </p>
+
+            <h2>Changes to This Policy</h2>
+            <p>
+                This Privacy Policy may be updated from time to time. If material changes are made, the updated
+                version will be published at this URL with a revised effective date.
+            </p>
+
+            <h2>Contact</h2>
+            <p>
+                If you have questions about this Privacy Policy, contact:
+            </p>
+            <ul>
+                <li>Mario Alfonso Medina Macias</li>
+                <li>Email: <a href="mailto:YOUR_SUPPORT_EMAIL@example.com">YOUR_SUPPORT_EMAIL@example.com</a></li>
+                <li>Support URL: <a href="https://example.com/support">https://example.com/support</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
